@@ -122,3 +122,48 @@ body {
 .button {
     animation-delay: 7s;
 }
+
+
+/* Responsive */
+
+@media (max-width: 1120px) {
+    .wrapper {
+        margin: 48px 60px;
+    }
+    .greeting {
+        font-size: var(--sm);
+    }
+    .headline {
+        font-size: var(--md);
+    }
+    .sub-headline {
+        font-size: var(--md);
+    }
+    .description {
+        font-size: var(--xs);
+    }
+    .button {
+        font-size: var(--sm);
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        margin: 42px 20px;
+    }
+    .greeting {
+        font-size: var(--sm);
+    }
+    .headline {
+        font-size: var(--md);
+    }
+    .sub-headline {
+        font-size: var(--md);
+    }
+    .description {
+        font-size: var(--xs);
+    }
+    .button {
+        font-size: var(--sm);
+    }
+}
