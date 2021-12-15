@@ -25,6 +25,9 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PQHJXQD');
     </script>
     <!-- End Google Tag Manager -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -32,7 +35,17 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQHJXQD" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="grid">
+    <div class="loader">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <path fill="none" stroke="#c6f91f" stroke-width="8" stroke-dasharray="42.76482137044271 42.76482137044271"
+                d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z"
+                stroke-linecap="round" style="transform:scale(0.8);transform-origin:50px 50px">
+                <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="1s" keyTimes="0;1"
+                    values="0;256.58892822265625"></animate>
+            </path>
+        </svg>
+    </div>
+    <div class="grid" style="display: none;">
         <div class="topbar">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
                 <path d="M32 2L62 32L32 62L2 32L32 2Z" stroke="#C6F91F" stroke-width="2" />
@@ -43,35 +56,36 @@
         </div>
         <div class="hero">
             <div class="header">
-                <span class="header__intro">Hello, I'm</span>
-                <span class="header__title">Almer Tampus</span>
-                <span class="header__subtitle">I build stuffs for the internet</span>
+                <span class="header__intro">Hello, my name is</span>
+                <span class="header__title">
+                    <span class="header__letter">A</span><span class="header__letter">l</span><span
+                        class="header__letter">m</span><span class="header__letter">e</span><span
+                        class="header__letter">r</span>
+                    <span class="header__letter">T</span><span class="header__letter">a</span><span
+                        class="header__letter">m</span><span class="header__letter">p</span><span
+                        class="header__letter">u</span><span class="header__letter">s</span><span
+                        class="header__letter">.</span>
+                </span>
+                <span class="header__subtitle">I build things for the internet.</span>
                 <p class="header__description">I'm a detail-oriented web designer and developer who specializes in
-                    building static websites and management systems.
-                    Currently, I spend most of time working on personal projects.</p>
-                <p class="header__note">I'll be updating my website
-                    soon.</p>
-            </div>
-            <div class="content">
-                <span class="content__header">Find me on social media</span>
-                <div class="content__body">
-                    <div class="wrapper wrapper--socials">
-                        <a class="content__link" href="https://linkedin.com/in/almerflorestampus" target="_blank">
-                            <img class="content__icon" src="assets/img/linkedin.png" alt="">
-                        </a>
-                        <a class="content__link" href="https://github.com/guyfrommilkyway" target="_blank">
-                            <img class="content__icon" src="assets/img/github.png" alt="">
-                        </a>
-                        <a class="content__link" href="https://dribbble.com/guyfrommilkyway" target="_blank">
-                            <img class="content__icon" src="assets/img/dribbble.png" alt="">
-                        </a>
-                        <a class="content__link" href="https://facebook.com/almerflorestampus" target="_blank">
-                            <img class="content__icon" src="assets/img/facebook.png" alt="">
-                        </a>
-                        <a class="content__link" href="https://twitter.com/guyfrommilkyway" target="_blank">
-                            <img class="content__icon" src="assets/img/twitter.png" alt="">
-                        </a>
-                    </div>
+                    building static websites and management systems. <br><br> More updates will
+                    be coming soon.</p>
+                <div class="header__socials">
+                    <a class="header__link" href="https://linkedin.com/in/almerflorestampus" target="_blank">
+                        <img class="header__icon" src="assets/img/linkedin.png" alt="">
+                    </a>
+                    <a class="header__link" href="https://github.com/guyfrommilkyway" target="_blank">
+                        <img class="header__icon" src="assets/img/github.png" alt="">
+                    </a>
+                    <a class="header__link" href="https://dribbble.com/guyfrommilkyway" target="_blank">
+                        <img class="header__icon" src="assets/img/dribbble.png" alt="">
+                    </a>
+                    <a class="header__link" href="https://facebook.com/almerflorestampus" target="_blank">
+                        <img class="header__icon" src="assets/img/facebook.png" alt="">
+                    </a>
+                    <a class="header__link" href="https://twitter.com/guyfrommilkyway" target="_blank">
+                        <img class="header__icon" src="assets/img/twitter.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -85,7 +99,6 @@
             <span class="copyright-notice">Designed and Developed by <b>ALMER TAMPUS</b></span>
         </div>
     </div>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
